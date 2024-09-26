@@ -10,16 +10,26 @@
 </head>
 <body>
 <div class="container">
-    <form action = "" method="post">
-       <div class="centered-container">
-           <h1>Rueditas</h1>
+    <form th:action="@{/buscar-auto}" method="get">
+        <div class="centered-container">
+            <h1>Rueditas</h1>
+        </div>
 
-       </div>
+        <style>
+            .centered-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        </style>
 
         <div class="mb-3">
-            <label for="numeroPlaca">Ingrese el número de placa:</label>
-            <input type="text" id="numeroPlaca" name="numeroPlaca" placeholder="Numero Placa"
-            class="form-control form-control-lg">
+            <label for="ASR-142">Ingrese una placa:</label>
+            <h1>
+
+            </h1>
+            <input required type="text" id="ASR-142" name="ASR-142" placeholder="ASR-142 "
+            class="form-control form-control-lg" pattern="[A-Za-z0-9]{1,7}">
 
         </div>
 
